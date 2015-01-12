@@ -1,0 +1,7 @@
+
+0,http://google.com,gaia_loginformEmailPasswdsignIn,https://accounts.google.com/ServiceLoginAuth,1,https://accounts.google.com/ServiceLoginAuth,1,1
+1,http://www.youtube.com,gaia_loginformEmailPasswdsignIn,https://accounts.google.com/ServiceLoginAuth,1,https://accounts.google.com/ServiceLoginAuth,1,1
+2,http://www.facebook.com,login_formemailpassu_0_n,https://www.facebook.com/login.php?login_attempt=1,1,https://www.facebook.com/login.php?login_attempt=1,1,1
+32,http://www.wikia.com,no login form id,,2,,1,4
+33,http://www.whitepages.com,no login form id,,2,,1,4
+34,http://www.cnn.com,no login form id,,2,,1,4
