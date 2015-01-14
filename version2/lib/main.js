@@ -6,7 +6,7 @@ var tabs = require("sdk/tabs");
 var pageMod = require("sdk/page-mod");
 var pageWorker = require("sdk/page-worker");
 var self = require("sdk/self");
-var profilePath = require("sdk/system").pathFor("ProfD");
+var resultsPath = require("sdk/system").pathFor("ProfD");
 var fileComponent = Cc["@mozilla.org/file/local;1"].createInstance(Ci.nsILocalFile);
 var testFile = require("./testList");
 var windows = require("sdk/windows").browserWindows;
@@ -45,8 +45,6 @@ exports.main = function (options, callbacks) {
   console.log(current); 
   tabs.open(testList[current]); 
   logfile = options.staticArgs.logfile; 
-  //timeOutNextWebsite(); 
- 
 };
 
 /**
@@ -62,18 +60,9 @@ pageMod.PageMod({
 
 });
 
-
-/*
-function timeOutNextWebsite() {
-  setTimeout(nextWebsite, 10000);
-}
-*/
-
 function nextWebsite() {
   saveResultToFile(logfile); 
 }
-
-
 
 function changeWeb(worker)  {
 	worker.port.on("findLoginForm.js to main.js: login form id", function(message)  {
@@ -87,7 +76,7 @@ function changeWeb(worker)  {
 	});
 	worker.port.on("cannot complete modifyForm", function(message)  {
 		findLoginButtonAndForm = "cannot complete modifyForm"; 
-		next(); 
+		saveResultToFile(logfile); 
 	});	
 	
 	worker.port.on("login form ids", function(message) {
@@ -98,7 +87,7 @@ function changeWeb(worker)  {
 	
 	worker.port.on("no button/forms found", function() {
 		findLoginButtonAndForm = "button and form not found"
-		next(); 
+		saveResultToFile(logfile); 
 	});
 
 	worker.port.on("Intercept Post Request", function() {
@@ -182,6 +171,8 @@ function fileNameSanitize(str)
 
 function saveResultToFile(fileName)
 {
+	resultsPath = resultsPath.substring(0, resultsPath.length - 5); 
+	console.log(resultsPath); 
 	if (formAction == "form doesn't have action") {
 		compareActionandPosturl = 2; 
 	}
@@ -195,7 +186,7 @@ function saveResultToFile(fileName)
 	}
 	content = current + "," + testList[current] + "," +findLoginButtonAndForm + "," + formAction + "," + isHTTPs + "," + POSTurl + "," + compareActionAndPosturl + "," + loginResult; 
 	fileName = fileNameSanitize(fileName);
-	var filePath = file.join(profilePath, "testResults", fileName);
+	var filePath = file.join(resultsPath, "testResults", fileName);
 
 	fileComponent.initWithPath(filePath); 
 
@@ -204,7 +195,7 @@ function saveResultToFile(fileName)
 	foStream.write(content+"\n", content.length+1);
 	foStream.close();
 	current ++; 
-	advanceToNext(testList[current]);
+	//advanceToNext(testList[current]);
 }
 
 

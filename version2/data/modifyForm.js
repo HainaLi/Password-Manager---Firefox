@@ -105,10 +105,7 @@ function changeAction() { //of the sign in submit button
 		return false; 
 	}
 
-}
-
-
- 
+} 
  
 function blockSignInForm() {
 	if (user == 1 & password == 1) {
