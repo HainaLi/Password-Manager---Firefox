@@ -68,9 +68,6 @@ function clearCache() {
 	});
 }
 function checkUserPasswdField() { //returns true if the password and username fields are found
-	//var forms = document.getElementsByTagName("Form"); 
-
-
 	if (document.querySelector("#" + usernameid) != null ) {
 		user = 1; 
 		console.log("username field found"); 
@@ -194,25 +191,9 @@ function clickSubmit() {
 
 
 function run() {	
-
-	 //execute methods
-
-	//clearCache(); 
 	checkUserPasswdField(); 
-	//changeAction(); //only during debugging
 	blockSignInForm(); 
 	getAction(); 
-
 	insertDummy();
-
 	clickSubmit(); 
 }
-
-/**
-setTimeout(
-	function(){
-		console.log("entered setTimeout modifyForm.js");
-		self.port.emit("cannot complete modifyForm", ""); 
-	}, 15000);
-	
-	**/

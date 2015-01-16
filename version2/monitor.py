@@ -35,9 +35,9 @@ class Command(object):
 			thread.join()
 			status = 1; 
 			return status; 
-		print self.process.returncode
+		#print self.process.returncode
 
-start = 0
+start = 3
 numsites = 9999; 
 for x in range (start,numsites):
 	currentwebsite = str(x)
@@ -45,8 +45,8 @@ for x in range (start,numsites):
 	commandline = 'cfx run -p test'+ prof + ' --static-args=\"{\\\"startnum\\\": \\\"' + currentwebsite + '\\\", \\\"logfile\\\": \\\"results.txt\\\" }\"'
 
 	command = Command(commandline)
-	print 'Starting to test ', currentwebsite
-	result = command.run(timeout=10)	
-	print 'Finished testing ', currentwebsite
-	#print result
-	time.sleep(5)
+	print 'Starting to test', currentwebsite
+	result = command.run(timeout=20)		
+	print 'Finished testing', currentwebsite
+	if (result == 1):
+		time.sleep(5)

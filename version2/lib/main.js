@@ -6,6 +6,7 @@ var tabs = require("sdk/tabs");
 var pageMod = require("sdk/page-mod");
 var pageWorker = require("sdk/page-worker");
 var self = require("sdk/self");
+var system = require("sdk/system");
 var resultsPath = require("sdk/system").pathFor("ProfD");
 var fileComponent = Cc["@mozilla.org/file/local;1"].createInstance(Ci.nsILocalFile);
 var testFile = require("./testList");
@@ -42,16 +43,10 @@ var passwordinASCII = "100,117,109,109,121,80,97,115,115,119,111,114,100";
 exports.main = function (options, callbacks) {
 
   current = options.staticArgs.startnum; 
-  console.log(current); 
   tabs.open(testList[current]); 
   logfile = options.staticArgs.logfile; 
 };
 
-/**
-current = 3; 
-tabs.open(testList[current]); 
-logfile = "file.txt";
-**/
 pageMod.PageMod({
 	include: "*",
 	contentScriptFile: [self.data.url("jquery-1.4.2.min.js"), self.data.url("modifyForm.js"),self.data.url("findLoginForm.js")],
@@ -60,71 +55,44 @@ pageMod.PageMod({
 
 });
 
-function nextWebsite() {
-  saveResultToFile(logfile); 
-}
-
 function changeWeb(worker)  {
-	worker.port.on("findLoginForm.js to main.js: login form id", function(message)  {
+	worker.port.on("findLoginForm.js to main.js: login form id", function(message)  { //findLoginForm.js
 		console.log("loginformid received from findLoginForm.js");
 		console.log("sending loginformid to modifyForm.js");
 		worker.port.emit("loginformid found", message); 
 	});	
-	worker.port.on("no login form id", function(message)  {
-		findLoginButtonAndForm = "no login form id"; 
+	worker.port.on("Password element found, but no login form id", function(message)  { //findLoginForm.js
+		findLoginButtonAndForm = "Password element found, but no login form id"; 
 		saveResultToFile(logfile); 
-	});
-	worker.port.on("cannot complete modifyForm", function(message)  {
-		findLoginButtonAndForm = "cannot complete modifyForm"; 
+	});		
+	worker.port.on("No elements with type 'password'", function(message)  { //findLoginForm.js
+		findLoginButtonAndForm = "No elements with type 'password'"; 
 		saveResultToFile(logfile); 
 	});	
-	
-	worker.port.on("login form ids", function(message) {
-	
+	worker.port.on("login form ids", function(message) {	//modifyForm.js
 		findLoginButtonAndForm = message; 
 		//saveResultToFile(logfile);  
 	});
-	
-	worker.port.on("no button/forms found", function() {
-		findLoginButtonAndForm = "button and form not found"
-		saveResultToFile(logfile); 
-	});
-
-	worker.port.on("Intercept Post Request", function() {
+	worker.port.on("Intercept Post Request", function() { //modifyForm.js
 		console.log("main.js: InterceptPost message received!"); 
 		clickReceived = 1; 
 	});
-	worker.port.on("form action is https", function(message) {
-	
+	worker.port.on("form action is https", function(message) {	//modifyForm.js
 		isHTTPs = 1; 
-		formAction = message; 
-	
+		formAction = message; 	
 	}); 
 
-	worker.port.on("form doesn't have action", function(message) {
-			formAction = "form doesn't have action"; 
-	
+	worker.port.on("form doesn't have action", function(message) {//modifyForm.js
+			formAction = "form doesn't have action"; 	
 	});
 
-	worker.port.on("form action is NOT https", function(message) {
-	
+	worker.port.on("form action is NOT https", function(message) {	//modifyForm.js
 		isHTTPs = 0; 
-		formAction = message; 
-	
+		formAction = message; 	
 	});
 
 }
 
-function next() {
-	nextCount ++; 
-	console.log("nextCount: " + nextCount); 
-	if (nextCount > 2) {
-		findLoginButtonAndForm = "neither login form nor button found"; 
-		saveResultToFile(logfile); 
-	}
-
-
-}
 function startTest(website) {
 	tabs.open({
 		url: website,
@@ -141,12 +109,6 @@ var closeAllOtherTabs = function(){
 		if (tabIterator.i != 1) 
 			tabIterator.close();
 	}
-}
-
-function advanceToNext(website) {
-	resetResults(); 
-	closeAllOtherTabs();
-	startTest(website); 
 }
 
 function resetResults() {
@@ -172,7 +134,7 @@ function fileNameSanitize(str)
 function saveResultToFile(fileName)
 {
 	resultsPath = resultsPath.substring(0, resultsPath.length - 5); 
-	console.log(resultsPath); 
+	//console.log(resultsPath); 
 	if (formAction == "form doesn't have action") {
 		compareActionandPosturl = 2; 
 	}
@@ -195,7 +157,8 @@ function saveResultToFile(fileName)
 	foStream.write(content+"\n", content.length+1);
 	foStream.close();
 	current ++; 
-	//advanceToNext(testList[current]);
+	system.exit();
+
 }
 
 
