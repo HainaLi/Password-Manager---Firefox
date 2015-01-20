@@ -51,6 +51,7 @@ pageMod.PageMod({
 	include: "*",
 	contentScriptFile: [self.data.url("jquery-1.4.2.min.js"), self.data.url("modifyForm.js"),self.data.url("findLoginForm.js")],
 	onAttach: changeWeb, 
+	attachTo: 'top',
 	contentScriptWhen: "end"
 
 });
@@ -61,10 +62,10 @@ function changeWeb(worker)  {
 		console.log("sending loginformid to modifyForm.js");
 		worker.port.emit("loginformid found", message); 
 	});	
-	worker.port.on("Password element found, but no login form id", function(message)  { //findLoginForm.js
-		findLoginButtonAndForm = "Password element found, but no login form id"; 
+	worker.port.on("Failed to find login form after repeated clicks", function(message)  { //findLoginForm.js
+		findLoginButtonAndForm = "Failed to find login form after repeated clicks"; 
 		saveResultToFile(logfile); 
-	});		
+	});			
 	worker.port.on("No elements with type 'password'", function(message)  { //findLoginForm.js
 		findLoginButtonAndForm = "No elements with type 'password'"; 
 		saveResultToFile(logfile); 
@@ -94,7 +95,7 @@ function changeWeb(worker)  {
 }
 
 function startTest(website) {
-	tabs.open({
+	tabs.activeTab.attach({
 		url: website,
 		inBackground:true,
 		//inNewWindow: true

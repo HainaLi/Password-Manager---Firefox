@@ -1,6 +1,0 @@
-0,http://google.com,gaia_loginformEmailPasswdsignIn,https://accounts.google.com/ServiceLoginAuth,1,https://accounts.google.com/ServiceLoginAuth,1,1
-1,http://www.youtube.com,gaia_loginformEmailPasswdsignIn,https://accounts.google.com/ServiceLoginAuth,1,https://accounts.google.com/ServiceLoginAuth,1,1
-2,http://www.facebook.com,login_formemailpassu_0_n,https://www.facebook.com/login.php?login_attempt=1,1,https://www.facebook.com/login.php?login_attempt=1,1,1
-0,http://google.com,gaia_loginformEmailPasswdsignIn,https://accounts.google.com/ServiceLoginAuth,1,https://accounts.google.com/ServiceLoginAuth,1,1
-4,http://www.amazon.com,ap_signin_formap_emailap_passwordsignInSubmit-input,https://www.amazon.com/ap/signin,1,https://safebrowsing.google.com/safebrowsing/downloads?client=navclient-auto-ffox&appver=35.0&pver=2.2&key=AIzaSyD-s-mXL4mBzF7KMRkhTCIbG2RKnRGXzJc,0,0
-6,http://www.ebay.com,SignInFormuseridpasssgnBt,https://signin.ebay.com/ws/eBayISAPI.dll?co_partnerId=2&siteid=0&UsingSSL=1,1,https://signin.ebay.com/ws/eBayISAPI.dll?co_partnerId=2&siteid=0&UsingSSL=1,1,1

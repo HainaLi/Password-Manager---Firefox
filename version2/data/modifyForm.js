@@ -31,30 +31,70 @@ self.port.on("loginformid found", function(message){
 
 function setIds(loginformid) {
 	console.log("modifyForm.js: setIds"); 
+	var regexes = [/user/gi, /name/gi, /email/gi];
 	loginFormid = loginformid; 
-	var formelements = document.getElementById(loginFormid).elements; 
+	
+	var formelements = document.getElementById(loginformid).elements; 
 	for (var i = 0; i < formelements.length; i++) {
-
-		if ((formelements[i].id.toLowerCase().indexOf("user") != -1 | formelements[i].id.toLowerCase().indexOf("name") != -1 | formelements[i].id.toLowerCase().indexOf("email") != -1) & usernameid == "") {
+		var currentid = ""; 
+		var currentplaceholder = ""; 
+		if (formelements[i].hasAttribute("id")) { //"" means has id, but empty string
+			currentid = formelements[i].id; 
+			console.log("currentid: " + currentid); 
+		}
+		else {
+			var attr = document.createAttribute("id"); 
+			attr.value = "";
+			formelements[i].setAttributeNode(attr);
+			currentid = ""; 
+		}
 		
-			usernameid = formelements[i].id; 
-			if (document.getElementById(usernameid).hasAttribute("autocomplete")) {
-				document.getElementById(usernameid).autocomplete = "on"; 
+		if (formelements[i].hasAttribute("placeholder")) {
+			currentplaceholder = formelements[i].placeholder; 
+		}
+		else {
+			currentplaceholder = ""; 
+		}
+		
+		for (var j = 0; j < regexes.length; j++) {
+			if ((currentid.match(regexes[j]) != null) || (currentplaceholder.match(regexes[j]) != null)) {
+				usernameid = currentid;  
+				if (usernameid == "") {
+					usernameid = "usernameid123"; 
+					formelements[i].id = usernameid; 
+				}
+				if (document.getElementById(usernameid).hasAttribute("autocomplete")) {
+					document.getElementById(usernameid).autocomplete = "on"; 
+				}
+				break; 
 			}
 		}
 		
-		if (formelements[i].type == "password" & passwordid == "") {
-			passwordid = formelements[i].id; 
-			if (document.getElementById(usernameid).hasAttribute("autocomplete")) {
-				document.getElementById(usernameid).autocomplete = "on"; 
+		if (!(formelements[i].hasAttribute("type"))) {
+			continue; 
+		}
+		
+		if (formelements[i].type == "password") {
+			passwordid = currentid; 
+			if (passwordid == "") {
+				passwordid = "passwordid123"; 
+				formelements[i].id = passwordid; 
+			}
+			console.log("modifying form password id: " + passwordid); 
+			if (document.getElementById(passwordid).hasAttribute("autocomplete")) {
+				document.getElementById(passwordid).autocomplete = "on"; 
 			}
 		}
-		if (formelements[i].type == "submit" & submitbuttonid == "") {
-			submitbuttonid = formelements[i].id; 
+		if (formelements[i].type == "submit") {
+			submitbuttonid = currentid; 
+			if (submitbuttonid == "") {
+				submitbuttonid = "submitbuttonid123"; 
+				formelements[i].id = submitbuttonid; 
+			}
 		}
 	}
 	self.port.emit("login form ids", loginFormid+usernameid+passwordid+submitbuttonid); 
-	//console.log(usernameid + passwordid + submitbuttonid); 
+	console.log(usernameid + passwordid + submitbuttonid); 
 	if (usernameid != "" & passwordid != "" & submitbuttonid != "") {
 		run(); 
 	}

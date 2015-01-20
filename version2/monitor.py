@@ -37,8 +37,8 @@ class Command(object):
 			return status; 
 		#print self.process.returncode
 
-start = 3
-numsites = 9999; 
+start = 0
+numsites = 10000; 
 for x in range (start,numsites):
 	currentwebsite = str(x)
 	prof = str(x%5)

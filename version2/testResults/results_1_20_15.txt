@@ -1,0 +1,132 @@
+0,http://google.com,gaia_loginformEmailPasswdsignIn,https://accounts.google.com/ServiceLoginAuth,1,https://accounts.google.com/ServiceLoginAuth,1,1
+1,http://www.youtube.com,gaia_loginformEmailPasswdsignIn,https://accounts.google.com/ServiceLoginAuth,1,https://accounts.google.com/ServiceLoginAuth,1,1
+2,http://www.facebook.com,login_formemailpassu_0_n,https://www.facebook.com/login.php?login_attempt=1,1,https://www.facebook.com/login.php?login_attempt=1,1,1
+3,http://www.msn.com,Failed to find login form after repeated clicks,,2,,1,4
+4,http://www.amazon.com,ap_signin_formap_emailap_passwordsignInSubmit-input,https://www.amazon.com/ap/signin,1,https://www.amazon.com/ap/signin,1,1
+5,http://www.twitter.com,loginformid123signin-emailsignin-passwordsubmitbuttonid123,https://twitter.com/sessions,1,https://twitter.com/sessions,1,1
+6,http://www.ebay.com,SignInFormuseridpasssgnBt,https://signin.ebay.com/ws/eBayISAPI.dll?co_partnerId=2&siteid=0&UsingSSL=1,1,https://signin.ebay.com/ws/eBayISAPI.dll?co_partnerId=2&siteid=0&UsingSSL=1,1,1
+8,http://www.yahoo.com,Failed to find login form after repeated clicks,,2,,1,4
+9,http://www.bing.com,Failed to find login form after repeated clicks,,2,,1,4
+10,http://www.microsoft.com,Failed to find login form after repeated clicks,,2,,1,4
+12,http://www.huffingtonpost.com,quicklogin_formquicklogin_namequicklogin_passquicklogin_button,https://secure.huffingtonpost.com/users/connect/quicklogin.php,1,https://secure.huffingtonpost.com/users/connect/quicklogin.php,1,1
+14,http://www.wordpress.com,loginformuser_passuser_passwp-submit,https://wordpress.com/wp-login.php,1,https://safebrowsing.google.com/safebrowsing/downloads?client=navclient-auto-ffox&appver=35.0&pver=2.2&key=AIzaSyD-s-mXL4mBzF7KMRkhTCIbG2RKnRGXzJc,0,0
+15,http://www.answers.com,loginformid123usernameid123passwordid123submitbuttonid123,,0,http://gb.symcd.com/,0,0
+18,http://www.blogger.com,gaia_loginformEmailPasswdsignIn,https://accounts.google.com/ServiceLoginAuth,1,https://accounts.google.com/ServiceLoginAuth,1,1
+19,http://www.tumblr.com,Failed to find login form after repeated clicks,,2,,1,4
+22,http://www.blogspot.com,gaia_loginformEmailPasswdsignIn,https://accounts.google.com/ServiceLoginAuth,1,https://accounts.google.com/ServiceLoginAuth,1,1
+23,http://www.craigslist.org,loginformid123inputEmailHandleinputPasswordsubmitbuttonid123,https://accounts.craigslist.org/login,1,https://accounts.craigslist.org/login,1,1
+24,http://www.adobe.com,Failed to find login form after repeated clicks,,2,,1,4
+25,http://www.comcast.net,mainformcontentplaceholder_1__streetNameTxtcontentplaceholder_1__ssnTxtcontentplaceholder_1__signInBtn,http://www.comcast.com/?CMP=ILCXFICOMUTOL3X,0,https://safebrowsing.google.com/safebrowsing/downloads?client=navclient-auto-ffox&appver=35.0&pver=2.2&key=AIzaSyD-s-mXL4mBzF7KMRkhTCIbG2RKnRGXzJc,0,0
+27,http://www.paypal.com,loginformid123login_emaillogin_passwordsubmitbuttonid123,https://www.paypal.com/signin/intent?returnUrl=https%3A%2F%2Fwww.paypal.com%2Fcgi-bin%2Fwebscr%3Fcmd%3D_account,1,https://www.paypal.com/signin/intent?returnUrl=https%3A%2F%2Fwww.paypal.com%2Fcgi-bin%2Fwebscr%3Fcmd%3D_account,1,1
+29,http://www.godaddy.com,loginFormloginnamepasswordsubmitbuttonid123,https://sso.godaddy.com/?path=sso%2freturn&app=www,1,https://sso.godaddy.com/?path=sso%2freturn&app=www,1,1
+30,http://www.reddit.com,login_login-mainusernameid123passwordid123submitbuttonid123,https://www.reddit.com/post/login,1,https://www.reddit.com/api/login/dummyUserName@gmail.com,0,1
+32,http://www.wikia.com,loginformid123usernameInputpasswordInputsubmitbuttonid123,http://www.wikia.com/Special:UserLogin,0,http://www.wikia.com/Special:UserLogin,1,1
+35,http://www.go.com,Failed to find login form after repeated clicks,,2,,1,4
+37,http://www.wellsfargo.com,frmSignonuseridpasswordbtnSignon,https://online.wellsfargo.com/signon,1,https://online.wellsfargo.com/signon,1,1
+38,http://www.buzzfeed.com,Failed to find login form after repeated clicks,,2,,1,4
+39,http://www.wow.com,Failed to find login form after repeated clicks,,2,,1,4
+40,http://www.yellowpages.com,loginformid123usernameid123passwordid123submitbuttonid123,https://accounts.yellowpages.com/login?next=https%3A%2F%2Faccounts.yellowpages.com%2Fdialog%2Foauth&client_id=590d26ff-34f1-447e-ace1-97d075dd7421&response_type=code&vrid=30439a49-9f37-4762-92ee-2aef1ce3ddff&merge_history=true,1,https://accounts.yellowpages.com/login?next=https%3A%2F%2Faccounts.yellowpages.com%2Fdialog%2Foauth&client_id=590d26ff-34f1-447e-ace1-97d075dd7421&response_type=code&vrid=30439a49-9f37-4762-92ee-2aef1ce3ddff&merge_history=true,1,1
+42,http://www.inbox.com,loginformid123txtEmailtxtPasssubmitbuttonid123,https://www.inbox.com/login.aspx,1,https://www.inbox.com/login.aspx,1,1
+43,http://www.bleacherreport.com,loginformid123user_passworduser_passwordsubmitbuttonid123,https://bleacherreport.com/login,1,https://bleacherreport.com/login,1,3
+44,http://www.imdb.com,Failed to find login form after repeated clicks,,2,,1,4
+47,http://www.att.com,ssoLoginFormuserPassworduserPasswordtguardLoginButton,https://www.att.com/olam/loginAction.olamexecute,1,https://safebrowsing.google.com/safebrowsing/downloads?client=navclient-auto-ffox&appver=35.0&pver=2.2&key=AIzaSyD-s-mXL4mBzF7KMRkhTCIbG2RKnRGXzJc,0,0
+48,http://www.legacy.com,Failed to find login form after repeated clicks,,2,,1,4
+49,http://www.webmd.com,loginformid123usernameid123passwordid123submitbuttonid123,,0,https://member.webmd.com/signin,0,1
+50,http://www.imgur.com,Failed to find login form after repeated clicks,,2,,1,4
+52,http://www.apple.com,Failed to find login form after repeated clicks,,2,,1,4
+53,http://www.mapquest.com,Failed to find login form after repeated clicks,,2,,1,4
+55,http://www.examiner.com,user-loginedit-nameedit-passedit-submit,http://www.examiner.com/user/login,0,http://www.examiner.com/user/login,1,1
+57,http://www.chacha.com,formLoginusernamepasswordsubmitbuttonid123,https://www.chacha.com/secureLogin,1,https://www.chacha.com/secureLogin,1,1
+58,http://www.tmz.com,signin-formEmailPasswordsubmitbuttonid123,http://www.tmz.com/signin/,0,http://www.tmz.com/signin/,1,1
+60,http://www.photobucket.com,Failed to find login form after repeated clicks,,2,,1,4
+62,http://www.urbandictionary.com,Failed to find login form after repeated clicks,,2,,1,4
+63,http://www.usps.com,login-forminput-usernameinput-passwordbtn-header-hidden-input-signin,https://tools.usps.com/go/LoginAction.action,1,http://ocsp.comodoca.com/,0,0
+65,http://www.city-data.com,Failed to find login form after repeated clicks,,2,,1,4
+67,http://www.bizrate.com,Failed to find login form after repeated clicks,,2,,1,4
+70,http://www.cnet.com,Failed to find login form after repeated clicks,,2,,1,4
+72,http://www.hulu.com,Failed to find login form after repeated clicks,,2,,1,4
+73,http://www.ups.com,Failed to find login form after repeated clicks,,2,,1,4
+75,http://www.topix.com,signin_formlogin_email_addrpasswordid123submitbuttonid123,http://www.topix.com/member/login,0,http://www.topix.com/member/login,1,1
+77,http://www.merriam-webster.com,loginformid123usernameid123passwordid123submitbuttonid123,http://unabridged.merriam-webster.com/log-in.php,0,http://unabridged.merriam-webster.com/log-in.php,1,3
+78,http://www.flickr.com,mbr-login-formlogin-usernamelogin-passwdlogin-signin,https://login.yahoo.com/config/login?.src=flickrsignin&.pc=8190&.scrumb=0&.pd=c%3DH6T9XcS72e4mRnW3NpTAiU8ZkA--&.intl=us&.lang=en&mg=1&.done=https%3A%2F%2Flogin.yahoo.com%2Fconfig%2Fvalidate%3F.src%3Dflickrsignin%26.pc%3D8190%26.scrumb%3D0%26.pd%3Dc%253DJvVF95K62e6PzdPu7MBv2V8-%26.intl%3Dus%26.done%3Dhttps%253A%252F%252Fwww.flickr.com%252Fsignin%252Fyahoo%252F%253Fredir%253Dhttps%25253A%25252F%25252Fwww.flickr.com%25252F,1,https://login.yahoo.com/config/login?.src=flickrsignin&.pc=8190&.scrumb=0&.pd=c%3DH6T9XcS72e4mRnW3NpTAiU8ZkA--&.intl=us&.lang=en&mg=1&.done=https%3A%2F%2Flogin.yahoo.com%2Fconfig%2Fvalidate%3F.src%3Dflickrsignin%26.pc%3D8190%26.scrumb%3D0%26.pd%3Dc%253DJvVF95K62e6PzdPu7MBv2V8-%26.intl%3Dus%26.done%3Dhttps%253A%252F%252Fwww.flickr.com%252Fsignin%252Fyahoo%252F%253Fredir%253Dhttps%25253A%25252F%25252Fwww.flickr.com%25252F,1,1
+82,http://www.hubpages.com,loginformid123us1shem2us1sisma2signin_button,,0,https://hubpages.com/signin/,0,1
+85,http://www.sears.com,Failed to find login form after repeated clicks,,2,,1,4
+87,http://www.norton.com,Failed to find login form after repeated clicks,,2,,1,4
+88,http://www.deviantart.com,form-loginlogin-usernamelogin-passwordsubmitbuttonid123,https://www.deviantart.com/users/login,1,https://www.deviantart.com/users/login,1,1
+92,http://www.lowes.com,Failed to find login form after repeated clicks,,2,,1,4
+95,http://www.fixya.com,signinformusernameid123passwordid123submitbuttonid123,https://www.fixya.com/ssl/signin30.aspx,1,https://www.fixya.com/ssl/signin30.aspx,1,1
+97,http://www.netflix.com,login-formemailpasswordlogin-form-contBtn,,0,https://safebrowsing.google.com/safebrowsing/downloads?client=navclient-auto-ffox&appver=35.0&pver=2.2&key=AIzaSyD-s-mXL4mBzF7KMRkhTCIbG2RKnRGXzJc,0,0
+98,http://www.fedex.com,Failed to find login form after repeated clicks,,2,,1,4
+102,http://www.mayoclinic.com,Failed to find login form after repeated clicks,,2,,1,4
+103,http://www.break.com,bmn-create-account-formbmn-signin-emailbmn-signin-passwordbmn-sign-in-btn,,0,https://auth.break.com/auth/logon,0,1
+105,http://www.simplyhired.com,signin-formemailpasswordsubmitbuttonid123,,0,https://safebrowsing.google.com/safebrowsing/downloads?client=navclient-auto-ffox&appver=35.0&pver=2.2&key=AIzaSyD-s-mXL4mBzF7KMRkhTCIbG2RKnRGXzJc,0,0
+107,http://www.usmagazine.com,Failed to find login form after repeated clicks,,2,,1,4
+108,http://www.etsy.com,signin-formusername-existingpassword-existingsignin-button,https://www.etsy.com/signin?from_page=https%3A%2F%2Fwww.etsy.com%2F,1,https://www.etsy.com/signin?from_page=https%3A%2F%2Fwww.etsy.com%2F,1,1
+110,http://www.cnbc.com,Failed to find login form after repeated clicks,,2,,1,4
+112,http://www.jcpenney.com,signIn_formemailidLoginmypasswdLoginsubmitbuttonid123,https://www.jcpenney.com/jsp/profile/secure/login.jsp?entry=&isfromMyAccount=true&_DARGS=/dotcom/jsp/profile/secure/login.jsp.loginFormId,1,https://www.jcpenney.com/jsp/profile/secure/login.jsp?entry=&isfromMyAccount=true&_DARGS=/dotcom/jsp/profile/secure/login.jsp.loginFormId,1,1
+115,http://www.sbnation.com,chorus-auth-passwordusernameid123passwordid123submitbuttonid123,,0,http://www.sbnation.com/,0,1
+117,http://www.nih.gov,Failed to find login form after repeated clicks,,2,,1,4
+118,http://www.squidoo.com,Failed to find login form after repeated clicks,,2,,1,4
+120,http://www.foods.tv,Failed to find login form after repeated clicks,,2,,1,4
+123,http://www.collegehumor.com,form0usernameid123passwordid123submitbuttonid123,http://www.collegehumor.com/signin,0,http://vassg141.ocsp.omniroot.com/,0,0
+125,http://www.pch.com,Failed to find login form after repeated clicks,,2,,1,4
+127,http://www.livestrong.com,loginFormlogin_usernamelogin_passwordsubmitbuttonid123,https://www.livestrong.com/login/,1,http://gtssl-ocsp.geotrust.com/,0,0
+128,http://www.upworthy.com,Failed to find login form after repeated clicks,,2,,1,4
+130,http://www.skype.com,loginFormusernamepasswordsignIn,https://login.skype.com/login?return_url=https%3A%2F%2Fsecure.skype.com%2Fportal%2Foverview,1,https://login.skype.com/login?return_url=https%3A%2F%2Fsecure.skype.com%2Fportal%2Foverview,1,1
+132,http://www.barnesandnoble.com,Failed to find login form after repeated clicks,,2,,1,4
+133,http://www.macys.com,signInFormemailpasswordsignInBtn,https://www.macys.com/account/signin?cm_sp=navigation-_-top_nav-_-signin,1,https://www.macys.com/account/signin?cm_sp=navigation-_-top_nav-_-signin,1,1
+137,http://www.staples.com,Failed to find login form after repeated clicks,,2,,1,4
+142,http://www.patch.com,Failed to find login form after repeated clicks,,2,,1,4
+143,http://www.foodnetwork.com,aim_Loginaim_Emailaim_Passwordsubmitbuttonid123,,0,https://mysecure.foodnetwork.com/aim/rest/login,0,1
+145,http://www.king.com,Failed to find login form after repeated clicks,,2,,1,4
+147,http://www.wikihow.com,Failed to find login form after repeated clicks,,2,,1,4
+148,http://www.cryptome.org,Failed to find login form after repeated clicks,,2,,1,4
+150,http://www.csmonitor.com,Failed to find login form after repeated clicks,,2,,1,4
+160,http://www.citibank.com,SignonFormrememberuseridpwdlink_lkRegSetupCont,https://online.citibank.com/US/JSO/signon/ProcessUsernameSignon.do,1,https://online.citibank.com/US/JSO/signon/ProcessUsernameSignon.do,1,3
+163,http://www.cbssports.com,login_formuseridpasswordsubmitbuttonid123,https://www.cbssports.com/login,1,https://www.cbssports.com/login,1,1
+165,http://www.howstuffworks.com,Failed to find login form after repeated clicks,,2,,1,4
+167,http://www.indeed.com,loginformsignin_emailsignin_passwordsubmitbuttonid123,https://secure.indeed.com/account/login,1,https://safebrowsing.google.com/safebrowsing/downloads?client=navclient-auto-ffox&appver=35.0&pver=2.2&key=AIzaSyD-s-mXL4mBzF7KMRkhTCIbG2RKnRGXzJc,0,0
+168,http://www.southwest.com,loginformid123usernamepasswordsubmitbuttonid123,https://www.southwest.com/flight/login?loginEntryPoint=GLOBAL_NAV_LOGIN,1,https://www.southwest.com/flight/login?loginEntryPoint=GLOBAL_NAV_LOGIN,1,1
+170,http://www.ca.gov,Failed to find login form after repeated clicks,,2,,1,4
+172,http://www.typepad.com,signin-form-typepadusernamepasswordsubmitbuttonid123,https://www.typepad.com/secure/services/signin/save,1,https://www.typepad.com/secure/services/signin/save,1,2
+175,http://www.github.com,loginformid123usernameid123passwordid123submitbuttonid123,https://github.com/join,1,https://www.google-analytics.com/collect,0,0
+177,http://www.thedailybeast.com,Failed to find login form after repeated clicks,,2,,1,4
+180,http://www.trulia.com,Failed to find login form after repeated clicks,,2,,1,4
+182,http://www.womensforum.com,Failed to find login form after repeated clicks,,2,,1,4
+183,http://www.walgreens.com,loginformid123unamepassword2submitbuttonid123,https://www.walgreens.com/login.jsp?_DARGS=/login_fg.jsp.loginform,1,https://www.walgreens.com/login.jsp?_DARGS=/login_fg.jsp.loginform,1,1
+185,http://www.usa.gov,Failed to find login form after repeated clicks,,2,,1,4
+187,http://www.local.com,aspnetFormctl00_ContentPlaceHolder1_emailctl00_ContentPlaceHolder1_passwordctl00_ContentPlaceHolder1_button_on,https://advertise.local.com/login.aspx,1,http://ocsp.digicert.com/,0,0
+188,http://www.moviefone.com,Failed to find login form after repeated clicks,,2,,1,4
+192,http://www.ngb.tv,Failed to find login form after repeated clicks,,2,,1,4
+195,http://www.babylon.com,Failed to find login form after repeated clicks,,2,,1,4
+197,http://www.gizmodo.com,login-selector-formscreenNameSignIntokensubmitbuttonid123,,0,http://vassg141.ocsp.omniroot.com/,0,0
+200,http://www.complex.com,Failed to find login form after repeated clicks,,2,,1,4
+203,http://www.ew.com,Failed to find login form after repeated clicks,,2,,1,4
+205,http://www.breitbart.com,Failed to find login form after repeated clicks,,2,,1,4
+208,http://www.dell.com,frmPremierSignInUserNamePasswordbtnSubmitSignInForm,javascript:void(0);,0,https://www.dell.com/sts/passive/commercial/v1/us/en/19/Premier/Login/SignIn?ReturnUrl=https%3a%2f%2fwww.dell.com%2fsts%2fpassive%2fcommercial%2fv1%2fus%2fen%2f19%2fPremier%2fLogin%2fAnonymous%3fwa%3dwsignin1.0%26wtrealm%3dhttp%25253a%25252f%25252fwww.dell.com%26wreply%3dhttps%25253a%25252f%25252fwww.dell.com%25252fidentity%25252fv2%25252fRedirect%26wctx%3dcht%25253dlogin%252526%25257eck%25253dmn,0,1
+210,http://www.dmv.org,Failed to find login form after repeated clicks,,2,,1,4
+212,http://www.latimes.com,Failed to find login form after repeated clicks,,2,,1,4
+218,http://www.ticketmaster.com,loginformid123emailpasswordsubmitbuttonid123,https://www.ticketmaster.com/member?tm_link=mytm_SignIn&v=uoT1KF-PMwqDZGLKu8prmz1klLnhf4OSn1ubZEORqsudjRnUYfZ27Op_Qzl8BDKfLjJmz30aa3H7YD7Shi_gwGzZ0ibVPZ9U7CzGz-LkU-R9y56PwNivN5KKhvXcgw9yfjbAT0mX9R2TT-EjnNzuA19l3hJPZ_iKtZ97TlsV_o9pquerQ0MRbIz5vm4qHGpDDuY4U4xz7hBZ_iKkaceoN4F3RG2w7s6p_3TdtttnN0_-UsuDVBo-oU5IU7yx3g6xNJY8amprnb7ZTg14AgVLnbfOtGukDGd3p4wgQJthXseD-O_XZtKs1Ft79VU4Kemu-hWzprS9-ZlO9E22yXOhLOQfRf3pQQKbHdtVaDINAkk7d4RNZjhy3Q7_Dv_ySU_CikyLXQ3446PsSUT5cO71vrxIrKWJBSijf94zRCTq0LPpYzBiOFPEoohmeLbhiGkOisQKPdZsJaOsU8LqRwFdk8C0zCMedd-MhWJWQb0-rtpMW14T2sNUCO6y59eN_tfyn5DoKqsdP6-QeX6hZ3Uf5PgTPL6jt7XpnBP-oH4,1,https://www.ticketmaster.com/member?tm_link=mytm_SignIn&v=uoT1KF-PMwqDZGLKu8prmz1klLnhf4OSn1ubZEORqsudjRnUYfZ27Op_Qzl8BDKfLjJmz30aa3H7YD7Shi_gwGzZ0ibVPZ9U7CzGz-LkU-R9y56PwNivN5KKhvXcgw9yfjbAT0mX9R2TT-EjnNzuA19l3hJPZ_iKtZ97TlsV_o9pquerQ0MRbIz5vm4qHGpDDuY4U4xz7hBZ_iKkaceoN4F3RG2w7s6p_3TdtttnN0_-UsuDVBo-oU5IU7yx3g6xNJY8amprnb7ZTg14AgVLnbfOtGukDGd3p4wgQJthXseD-O_XZtKs1Ft79VU4Kemu-hWzprS9-ZlO9E22yXOhLOQfRf3pQQKbHdtVaDINAkk7d4RNZjhy3Q7_Dv_ySU_CikyLXQ3446PsSUT5cO71vrxIrKWJBSijf94zRCTq0LPpYzBiOFPEoohmeLbhiGkOisQKPdZsJaOsU8LqRwFdk8C0zCMedd-MhWJWQb0-rtpMW14T2sNUCO6y59eN_tfyn5DoKqsdP6-QeX6hZ3Uf5PgTPL6jt7XpnBP-oH4,1,1
+220,http://www.politico.com,loginFormusernamepasswordsubmit1,http://www.politico.com/p/login/?webaction=loginAction,0,http://www.politico.com/p/login/?webaction=loginAction,1,3
+222,http://www.peoplefinders.com,MainFormMasterContentPlaceHolder_UserNameTextBoxMasterContentPlaceHolder_PasswordTextBoxMasterContentPlaceHolder_LoginButton,http://www.peoplefinders.com/login.aspx?ReturnUrl=%2f,0,http://www.peoplefinders.com/login.aspx?ReturnUrl=%2f,1,1
+223,http://www.zap2it.com,Failed to find login form after repeated clicks,,2,,1,4
+227,http://www.kbb.com,Failed to find login form after repeated clicks,,2,,1,4
+228,http://www.wikimedia.org,Failed to find login form after repeated clicks,,2,,1,4
+230,http://www.usaa.com,Logonfp_userlangusaaPasslogin,https://www.usaa.com/inet/ent_logon/j_security_check,1,https://www.usaa.com/inet/ent_logon/j_security_check,1,3
+232,http://www.healthgrades.com,loginformid123UserNamePasswordsubmitbuttonid123,https://user.healthgrades.com/Account/Login,1,https://user.healthgrades.com/Account/Login,1,1
+238,http://www.macrumors.com,Failed to find login form after repeated clicks,,2,,1,4
+240,http://www.metacafe.com,LogInFormsEmailsPasssubmitbuttonid123,https://secure.metacafe.com/account/login/?&action=login,1,https://secure.metacafe.com/account/login/?&action=login,1,1
+242,http://www.123greetings.com,addrbk_loginfrmlogin_emaillogin_passwordaddrbk_loginbut,,0,http://www.123greetings.com/connect/login_api,0,3
+245,http://www.cabelas.com,Failed to find login form after repeated clicks,,2,,1,4
+248,http://www.zappos.com,loginloginEmailpasswordid123zapposLogin,https://secure-www.zappos.com/authenticate,1,https://secure-www.zappos.com/tealeaf/tealeaf.cgi,0,0
+250,http://www.inquisitr.com,Failed to find login form after repeated clicks,,2,,1,4
+252,http://www.retailmenot.com,loginformid123emailpasswordsubmitbuttonid123,,0,https://www.retailmenot.com/serv/sec/rmnlogin,0,1
+253,http://www.barackobama.com,Failed to find login form after repeated clicks,,2,,1,4
+263,http://www.lg.com,Failed to find login form after repeated clicks,,2,,1,4
+267,http://www.flyertown.ca,Failed to find login form after repeated clicks,,2,,1,4
+268,http://www.timeanddate.com,loginformid123emailpasswordsubmitbuttonid123,https://www.timeanddate.com/scripts/accountlogin.php,1,https://safebrowsing.google.com/safebrowsing/downloads?client=navclient-auto-ffox&appver=35.0&pver=2.2&key=AIzaSyD-s-mXL4mBzF7KMRkhTCIbG2RKnRGXzJc,0,0
+270,http://www.lifescript.com,Failed to find login form after repeated clicks,,2,,1,4
+275,http://www.4chan.org,Failed to find login form after repeated clicks,,2,,1,4
+277,http://www.quizlet.com,loginformid123username1password1submitbuttonid123,https://quizlet.com/login,1,http://vassg141.ocsp.omniroot.com/,0,0
+278,http://www.microsofttranslator.com,Failed to find login form after repeated clicks,,2,,1,4
+282,http://www.proflowers.com,Failed to find login form after repeated clicks,,2,,1,4
